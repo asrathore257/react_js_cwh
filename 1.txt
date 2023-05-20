@@ -1,0 +1,6 @@
+//its a single page applicaton http aiox use doenload nodejs and npm node js is used to run javascript enviroment install react developer tool for the check the i
+which element we are working then add in chrome next install the thunderclient in -->for get post request check only in vscode then install es7 for the shortcut for for
+function 
+bracket colorizer 
+auto rename 
+live server
