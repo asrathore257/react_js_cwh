@@ -1,0 +1,4 @@
+extension es7 react/redux/snippet is used for the shortcuts becuse in this we add imp and use it
+like class based compnents and function based components 
+
+video - no-
