@@ -66,6 +66,15 @@ export class News extends Component {
       loading: false
     }
   }
+  async componentDidMount()
+  {
+    console.log("cdm");
+    let url="https://newsapi.org/v2/everything?domains=wsj.com&apiKey=4c8847b0b7b24a7085b795c201f2ba28";
+    let data=await fetch(url)
+    let parsedData=await data.json()
+    console.log(parsedData);
+    this.setState({articles:parsedData.articles})
+  }
   render() {
     return (
       <div className='container my-3'>
@@ -73,7 +82,7 @@ export class News extends Component {
         <div className="row">
           {this.state.articles.map((element) => {
             return <div className="col-md-4">
-              <NewsItem key={element.url} title={element.url} description={element.description} imageUrl={element.urlToImage} newsUrl={element.url}/>
+              <NewsItem key={element.url} title={element.title?element.title:""} description={element.description} imageUrl={element.urlToImage} newsUrl={element.url}/>
             </div>
           })}
 
